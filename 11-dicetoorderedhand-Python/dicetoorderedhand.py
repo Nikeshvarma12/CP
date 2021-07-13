@@ -12,4 +12,9 @@
 
 def dicetoorderedhand(a, b, c):
 	# your code goes here
-	pass
+	n=max(a,b,c)
+	
+	k=min(a,b,c)
+	m=a+b+c-n-k
+	return n*100+m*10+k
+	
