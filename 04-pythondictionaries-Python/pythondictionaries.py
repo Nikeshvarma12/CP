@@ -30,7 +30,7 @@ American City
 Asian City - Country
 Asian City - Country"""
 
-locations = {'North America': {'USA': ['Atlanta','Mountain View']},'Asia':{'India':['Banglore'],'China':['Shangai']},'Africa':{'Egypt':['Cairo']}}
+locations = {'North America': {'USA': ['Atlanta','Mountain View']},'Asia':{'India':['Bangalore'],'China':['Shanghai']},'Africa':{'Egypt':['Cairo']}}
 def sortUSA():
     '''Return all the cities in the USA in alphabetical order'''
     for i in locations:
