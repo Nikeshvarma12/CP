@@ -5,8 +5,11 @@
 # non-negative int value, the number of rows, and returns another int value, the number of pool
 # balls in that number  of full rows. For example, numberOfPoolBalls(3) returns 6. We will not 
 # limit our analysis to a "rack" of 15 balls. Rather, our pool table can contain an unlimited 
-# number of rows. For this problem and the next, you should research Triangular Numbers.
+# number of rows. For this problem and the next, you should cearch Triangular Numbers.
 
 def numberofpoolballs(rows):
 	# Your code goes here
-	pass
+	c=0
+	for i in range(1,rows+1):
+		c=c+i
+	return c
