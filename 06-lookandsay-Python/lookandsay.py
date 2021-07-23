@@ -10,5 +10,16 @@
 # lookAndSay([3,3,8,3,3,3,3]) == [(2,3),(1,8),(4,3)]
 
 def lookandsay(a):
-	# Your code goes here
-	pass
+	if a  == []:
+		return a
+	c=1
+	r=[]
+	dgt=a[0]
+	for i in a[1:]:
+		if i==dgt:
+			c+=1
+		else:
+			r=r+[(c,dgt)]
+			c=1
+			dgt=i
+	return r+[(c,dgt)]
