@@ -10,9 +10,7 @@ def checkPronic (n) :
     i = 0
     while ( i <= (int)(math.sqrt(n)) ) :
          
-        # Checking Pronic Number
-        # by multiplying consecutive
-        # numbers
+        
         if ( n == i * (i + 1)) :
             return True
         i = i + 1
