@@ -17,5 +17,9 @@
 # }
 
 def movieAwards(oscarResults):
-    # Your code goes here...
-    pass
+    l=list(oscarResults)
+    d=dict()
+    for key,value in l:
+        d[value]=d.get(value,0)+1
+
+    return d
