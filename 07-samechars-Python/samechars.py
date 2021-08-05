@@ -7,4 +7,9 @@
 
 def samechars(s1, s2):
 	# Your code goes here
-	pass
+	
+	for k in s2:
+		if(k not in s1):
+			return False
+	return True
+
