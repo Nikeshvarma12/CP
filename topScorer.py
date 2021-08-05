@@ -31,10 +31,10 @@ def topScorer(data):
     if z>y:
         return l[0]
     elif y>z:
-        return l[0]
+        return l[1]
     else:
         separator = ','
-        h=(str(seperator.join(l)))
+        h=(str(separator.join(l)))
         return h
 
 
