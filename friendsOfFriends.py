@@ -23,7 +23,32 @@ Thus, in this example, friendsOfFriends should return:
  'ramsay': set()
 }
 '''
+def readDict():
+    a = {}
+    n = int(input())
+    for i in range(n):
+        s = input().split()
+        a[s[0]] = set(s[1:])
 
 def friendsOfFriends(d):
     # Your code goes here...
-    return None
+       a=dict()
+       for i in d.keys():
+        if(len(d[i])==0):
+            a[i]=[]
+            continue
+        for j in d[i]:
+            if(j in d):
+                for k in d[j]:
+                    if(k!=i and k not in d[i]):
+                        if(i in a):
+                            if(k not in a[i]):
+                                a[i]+=[k]
+                        else:
+                            a[i]=[k]
+        return a
+
+d = friendsOfFriends(readDict())
+
+for i in sorted(d.keys()):
+    print(i, sorted(d[i]))
