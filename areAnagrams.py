@@ -16,6 +16,6 @@ def areAnagrams(s1, s2):
     else:
         return False
 # write your test cases here...
-p= areAnagrams("listen","silent")
+p= areAnagrams("aba","baa")
 print(p)
 
